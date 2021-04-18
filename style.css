@@ -107,7 +107,7 @@ input:placeholder-shown{
     font-weight: bold;
     margin-right: 10px;
 }
-.filter button:hover {
+.filter :hover {
     background: #cccccc;
     color: red;
 }
