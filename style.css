@@ -15,7 +15,6 @@ body {
 }
 .content-box {
     margin: 0 10%;
-
 }
 .header {/* En-tête */
     display: flex;
@@ -39,19 +38,21 @@ header p {
 nav{/* Nav en haut à droite */
     display: inline-flex;
     padding-top: 3px;
-    /*position: relative;*/
+    position: relative;
 }
 #nav-hebergements {/* Nav en haut à droite */
-    border-top: 3px solid var(--blue);
-    padding: 0 50px;
+    border-top: 2px solid var(--blue);
     color: var(--blue);
+    position: relative;
 }
 #nav-activite a {/* Nav en haut à droite*/
     color: black;
+    position: relative;
 }
 #nav-inscription {/* Nav en haut à droite*/
     font-weight: bold;
-    color: var(--blue);
+    color: var(--lightblue);
+    position: relative;
 }
 ul {
     list-style-type: none;
@@ -63,13 +64,13 @@ li > a {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin: 5px 0;
     width: 50%;
 }
 .map-logo {
     background-color: var(--grey);
     border-radius: 10px 0 0 10px;
-    height: 35px;
+    height: 40px;
     width: 45px;
     display: flex;
     justify-content: center;
@@ -77,19 +78,21 @@ li > a {
     margin-right: -2px;
 }
 input {
-    height: 35px;
+    height: 40px;
     padding-top: -5px;
-}
-input:placeholder-shown{
+    padding-left: 10px;
     font-weight: bold;
-    color: var(--black);
     /*margin-bottom: -4px;*/
 }
 .research-btn button{ /*bouton rechercher*/
     background-color: var(--blue);
     color: var(--white);
     border-radius: 0 10px 10px 0;
-    height: 35px;
+    padding: 2px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 40px;
+    width: 110px;
     margin-left: -2px;
     border: 0px;
 }
@@ -118,18 +121,16 @@ input:placeholder-shown{
     background-color: white;
     border-radius: 20px;
     border: 2px solid var(--grey);
-    height: 30px;
+    height: 40px;
     width: 140px;
     margin-right: 30px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
-    /*z-index: -1;;*/
 }
 .round { 
-    height: 30px; 
-    width: 25px; 
+    height: 40px; 
+    width: 35px; 
     background-color: var(--lightblue);
     border: 1px solid var(--lightblue);
     border-radius: 50%;
@@ -139,9 +140,8 @@ input:placeholder-shown{
     justify-content: center;
     align-items: center;
 }
-#filter-name {
-    display: inline-flex;
-    flex-flow: row wrap;
+.filterN {
+    text-align: center;
 }
 .name-bar { /*Logo info + texte */
     display: flex;
@@ -163,6 +163,7 @@ input:placeholder-shown{
     row-gap: 20px;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 20px;
 }
 #Marseille {
     background-color: var(--grey);
@@ -210,6 +211,11 @@ div.gallery1 {
     display: flex;
     flex-direction: row;
 }
+.stars1 {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
 .fa-star {
     size: 2px;   
 }
@@ -233,7 +239,7 @@ div.gallery1 {
 }
 .img-right {
     padding: 5px 5px;
-    height: 110px;
+    height: 120px;
     width: 110px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -253,7 +259,6 @@ div.bg-img {
 
 }
 div.gallery2 {
-    /*background-color: var(--white);*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -285,15 +290,11 @@ div.gallery2 {
 }
 #Activites {
     margin: 20px 0 20px 0;
-    line-height: 5px;
 }
 .grid-container {
-    border-radius: 20px;
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: auto auto auto;
-    /*margin: 10px;*/
-    /*column-gap: 20px;*/
     row-gap: 20px;
     justify-content: space-between;
 
@@ -369,11 +370,10 @@ footer {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
-    /*align-items: space-between;*/
     margin-top: 5px;
     width: 100%;
 }
-@media screen and (max-width: 1400px) and (min-width: 1367px) {  /*1450 à 1261px */ 
+@media screen and (max-width: 1400px) and (min-width: 1367px) {  /*1400 à 1367px */ 
     #Hebergement {
         display:flex;
         flex-direction: column;
@@ -414,14 +414,6 @@ footer {
     .icon-graph {
         padding-right: 20px
     }
-    .desc2r {
-        display: flex;
-        flex-direction: row;
-        padding-left: 10px;
-    }
-    #Activites {
-        height: 55%;
-    }
     .grid-container {
         border-radius: 20px;
         display: grid;
@@ -434,7 +426,7 @@ footer {
         width: 100%;
     }
 }
-@media screen and (max-width: 1366px) and (min-width: 800px) {
+@media screen and (max-width: 1366px) and (min-width: 951px) {
     #Hebergement {
         display:flex;
         flex-direction: column;
@@ -468,42 +460,35 @@ footer {
         width: 50%;
     }
 }
-/*@media screen and (max-width: 1260px) and (min-width: 901px) {
-    
-    
+@media screen and (max-width: 950px) and (min-width: 417px) { /* 950 à 417 px */
+    #Hebergement {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     #Marseille {
+        flex:none;
+        background-color: var(--grey);
+        border-radius: 20px;
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        width: 100%;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
     }
-    
     .Populaires {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: auto auto auto;
-        grid-column-start: 2;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    /*.Populaires-header {
-        grid-column: 1 / span 4;
-        grid-row: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0 20px;
-    }
-}*/
-@media screen and (max-width: 800px) and (min-width: 417px) { /* 900 à 400 px */
-
-    .Populaires {
+        flex: none;
+        background-color: var(--grey);
+        border-radius: 20px;
+        display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto ;
-        justify-content: space-around;
-        border-image: 20px;
-        width: 100%;
+        grid-template-rows: auto;
+        justify-content: center;
+        margin: 0 25%;
+        /*align-items: center;*/
+        width: 50%;
     }
     .Populaires-header {
         grid-column: 1 / span 3;
@@ -518,61 +503,23 @@ footer {
         /*padding-right: 20px*/
     }
 }
-/*@media screen and (max-width: 800px) and (min-width: 401px)  {
-    #Activites {
-        flex: none;
-        display: flex;
-        flex-direction: column;
-
-    }
-}*/
-@media screen and (max-width: 416px) {
-    .research-btn button {
-        display: none;
-    }
-    .research-btn2 {
-        display: flex;
-        background-color: var(--blue);
-        color: var(--white);
-        border-radius: 0 10px 10px 0;
-        height: 35px;
-        margin-left: -4px;
-    }
-    
-    #Hebergement {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+@media screen and (max-width: 417px) {
+    .content-box {
+        margin: 0 33%;
     }
     #Marseille {
-        /*flex:none;*/
-        background-color: var(--grey);
+        background-color: var(--white);
         border-radius: 20px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-content: center;
-        /*padding-bottom: 25px;
-        margin-bottom: 30px;*/
-    }
-    .gallery1 {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto auto;
-    }
-    .desc1 {
-        padding-left: 10px;
-    }
-    .End {
+        width: 33%;
         display: flex;
         flex-direction: column;
     }
-    #footer {
-        margin-top: 5px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-
+    #Hebergement {
+        display: none;
+    }
+    div.gallery1 {
+        background-color: var(--white);
+        border-radius: 20px;
+        padding: 4px;
     }
 }
