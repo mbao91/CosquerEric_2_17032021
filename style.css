@@ -374,12 +374,14 @@ footer {
     }
     .Marseille {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        flex-flow: column nowrap;
+        justify-content: center;
         margin-bottom: 10px;
         width: 100%;
     }
     #title1 {
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
     .card1 {
@@ -387,9 +389,12 @@ footer {
         flex-direction: column;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        width: fit-content;
         justify-content: center;
-        margin-bottom: 20px;
+        margin: 20px 33%;
+    }
+    .Marseille a {
+        display: flex;
+        justify-content: center;
     }
     .Populaires {
         width: 100%;
