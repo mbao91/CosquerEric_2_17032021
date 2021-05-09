@@ -102,8 +102,7 @@ input {
 }
 .content-box {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     align-items: center;
     position: initial;
 }
@@ -364,212 +363,114 @@ footer {
 #Propos, #Hebergements{
     margin-right: 90px;
 }
-@media screen and (max-width: 1380px) and (min-width: 1025px) {
+@media screen and (max-width: 1380px) and (min-width: 1120px) {
     #Main{
         display: flex;
-        flex-flow: column wrap; 
+        flex-flow: column-reverse wrap; 
     }
     .Marseille {
         width: 100%;
         margin-bottom: 10px;
         margin-right: 0;
+        padding: 0;
+        background-color: var(--white);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    #title1 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .card1 {
+        width: fit-content;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+    .img-left {
+        object-fit: cover;
+        height: 150px;
+        width: 420px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .Marseille a {
+        width: 100%;
     }
     .Populaires {
         width: 100%;
-        justify-content: center;
         padding-bottom: 10px;
+        margin-bottom: 20px;
     }
-    .title3 {
+    .Populaires-header {
+        grid-column: 1 / 4;
+        grid-row: 1;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        padding-top: 10px;
     }
     .grid-container {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-        justify-content: space-around;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
-    .grid-item1 {
-        grid-column: 1;
-        grid-row: 1 / 5;
-        /*Vieux port*/
+    .Big img, .Medium img, .Small img {
+        object-fit: cover;
+        height: 150px;
+        width: 420px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
-    .grid-item2 {
-        grid-column: 2;
-        grid-row: 1 / 3;
-        /*Pomègues*/
-    }
-    .grid-item3 {
-        grid-column: 2;
-        grid-row: 3 / 5;
-        /*Ile de Frioul*/
-    }
-    .grid-item4 {
-        grid-column: 2;
-        grid-row: 5 / 9;
-        /*Calanques*/
-    }
-    .grid-item5 {
-        grid-column: 1;
-        grid-row: 5 / 7;
-        /*Notre Dame*/
-    }
-    .grid-item6 {
-        grid-column: 1;
-        grid-row: 7 / 9;
-        /*Longchamps*/
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6{
+        width: fit-content;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 5px;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 845px) {
-    .name-bar {
-        justify-content: center;
-    }
-    /*.content-box {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        justify-content: space-between;
-        row-gap: 10px;
-        align-items: center;
-    }
-    /*.content-box p {
-        grid-column: 1;
-        grid-template-rows: 1 / 2;
-        display: flex;
-        align-items: center;
-    }
-    .content-box button:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1 / 1;
-    }
-    .content-box button:nth-child(3) {
-        grid-column: 3;
-        grid-row: 1 / 1;
-    }
-    .content-box button:nth-child(4) {
-        grid-column: 2;
-        grid-row: 2 / 2;
-    }
-    .content-box button:nth-child(5) {
-        grid-column: 3;
-        grid-row: 2 / 2;
-    }*/
-    #Main{
-        display: block;
-        justify-content: center;
+@media screen and (max-width: 1119px) and (min-width:415px) {
+    .box-content {
+        margin: 0 30%;
     }
     .Marseille {
-        display: flex;
-        flex-flow: column;
-        margin-bottom: 20px;
         width: 100%;
-    }
-    #title1 {
-        justify-content: center;
-    }
-    .card1 {
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-content: center;
-        margin: 20px 33%;
-        width: fit-content;
-    }
-    .Marseille a {
         display: flex;
-        justify-content: center;
+        flex-flow: row wrap;
     }
     .Populaires {
         width: 100%;
-        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
     }
-    .card2 {
-        margin: 10px 20px;
-        width: fit-content;
+    .img-right {
+        object-fit: cover;
+        padding: 5px 5px;
+        height: 150px;
+        width: 420px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 }
-@media screen and (max-width: 844px) and (min-width: 615px) {
-    /*.content-box {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        justify-content: space-between;
-        row-gap: 10px;
-        align-items: center;
+/*@media screen and (max-width: 414px) and (min-width: 1px) {
+    .box-content {
+        margin: 0 33%;
     }
     .content-box p {
-        grid-column: 1;
-        grid-template-rows: 1 / 2;
-        display: flex;
-        align-items: center;
+        width: 100%;
     }
-    .content-box button:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1 / 1;
-    }
-    .content-box button:nth-child(3) {
-        grid-column: 3;
-        grid-row: 1 / 1;
-    }
-    .content-box button:nth-child(4) {
-        grid-column: 2;
-        grid-row: 2 / 2;
-    }
-    .content-box button:nth-child(5) {
-        grid-column: 3;
-        grid-row: 2 / 2;
-    }*/
-    #Main {
-        display: block;
-        justify-content: center;
-    }
-    .Marseille {
-        display: flex;
-        flex-flow: column;
+    .Populaires {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
         margin-bottom: 20px;
-        width: 100%;
     }
-    #title1 {
-        justify-content: center;
-    }
-    .card1 {
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-content: center;
-        margin: 20px 33%;
-        width: fit-content;
-    }
-    .Marseille a {
+    .Populaires-header {
+        grid-column: 1 / 4;
+        grid-row: 1;
         display: flex;
-        justify-content: center;
-    }
-    .Populaires {
-        width: 100%;
-        justify-content: center;
-    }
-    .card2 {
-        margin: 10px 20px;
-        width: fit-content;
-    }
-}
-/*@media screen and (max-width: 414) and (min-width: 1px) {
-    header {
-        .logo
-    }
-    #Main {
-        background-color: none;
-        flex-flow: column wrap; 
-    }
-    .Populaires {
-        width: fit-content;
-        justify-content: center;
-    }
-    .card2 {
-        margin: 10px 20px;
-        width: fit-content;
-    }
+        flex-direction: row;
+        padding-top: 10px;
+    } 
 }
