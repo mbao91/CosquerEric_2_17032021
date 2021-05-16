@@ -956,10 +956,10 @@
             display: flex;
         }
     }
-    @media screen and (max-width: 480px) and (min-width: 1px) {
-        /*.Marseille, #Activites {
-            margin: 0 5%;
-        }*/
+    @media screen and (max-width: 480px) {
+        .Logo-Reservia, #nav-inscription, .research-bar, .name-bar, .before-main h1, .before-main > p{
+            padding: 0 10px;
+        }
         .Populaires {
             width: 100%;
             display: -webkit-box;
@@ -1023,18 +1023,15 @@
                object-fit: cover;
             padding: 1px 1px;
             height: 180px;
-            width: 50%;
+            width: 40%;
             border-top-right-radius: 0;
             border-bottom-left-radius: 20px;
         }
         .stars1 {
             padding-top: 30px;
         }
-        .img-left {
-            width: 325px;
-        }
-        .Big img, .Medium img, .Small img {
-            width: 325px;
+        .Big img, .Medium img, .Small img, .img-left {
+            width: 355px;
         }
         .grid-container {
             width: -webkit-fit-content;
@@ -1043,5 +1040,22 @@
         }
         footer {
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 420px) and (min-width: 1px) {
+        .cercle {
+            margin-right: 0;
+        }
+        .name-bar p {
+            padding: 4px;
+        }
+        .content-box :nth-child(5) + p {
+            padding: 0;
+        }
+        #buttons {
+            margin-left: 10px;
+        }
+        .Big img, .Medium img, .Small img, .img-left {
+            width: 327px;
         }
     }
