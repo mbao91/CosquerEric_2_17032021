@@ -10,31 +10,33 @@
     </head>
     <body>
         <div class="box-content">
-            <header>
+            <header><!--En-tête-->
+                <div class="before-main">
+                <div class="Top">
                 <div class="Logo-Reservia">
                     <img src="images/logo/Reservia.svg"></img>
                 </div>
-                <nav>
-                    <div id="nav-hebergements">
-                        <ul>
-                            <li><a href="#Hebergements">Hébergements</a></li>
-                        </ul>
-                    </div>
-                    <div id="nav-activite">
-                        <ul>
-                            <li><a href="#Activites">Activites</a></li>
-                        </ul>
-                    </div>
-                    <div id="nav-inscription">
-                        <ul>
-                            <li><a href="Ins">S'inscrire</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+                    <nav>
+                        <div id="nav-hebergements">
+                            <ul>
+                                <li><a href="#Main">Hébergements</a></li>
+                            </ul>
+                        </div>
+                        <div id="nav-activite">
+                            <ul>
+                                <li><a href="#Activites">Activites</a></li>
+                            </ul>
+                        </div>
+                        <div id="nav-inscription">
+                            <ul>
+                                <li><a href="Ins">S'inscrire</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <section class="research-bar">
+            <section class="research-bar"><!--barre de recherche-->
                 <div class="left-button">
                     <div class="map-logo">
                         <i class="fas fa-map-marker-alt"></i>
@@ -44,10 +46,10 @@
                     </form>
                     <div class="research-btn">
                         <button>
-                            <div>
+                            <div class="research-text">
                             Rechercher
                             </div>
-                            <div class="research-btn2">
+                            <div class="research-logo">
                                 <i class="fas fa-search"></i>
                             </div>
                         </button>
@@ -57,7 +59,7 @@
             <section id="buttons"><!--Filtres de recherche-->
                 <div class="content-box">
                 <p>Filtres</p>  
-                        <button>
+                        <button class="Economique">
                             <div class="round">
                                 <i class="fas fa-money-bill-wave"></i>
                             </div>
@@ -65,7 +67,7 @@
                                 <p>Economique</p>
                             </div>
                         </button>
-                        <button>
+                        <button class="Familial">
                             <div class="round">
                                 <i class="fas fa-child"></i>
                             </div>
@@ -73,7 +75,7 @@
                                 <p>Familial</p>
                             </div>
                         </button>
-                        <button>
+                        <button class="Romantique">
                             <div class="round">
                                 <i class="fab fa-gratipay"></i>
                             </div>
@@ -81,7 +83,7 @@
                                 <p>Romantique</p>
                             </div>
                         </button>
-                        <button>
+                        <button class="Animaux">
                             <div class="round">
                                 <i class="fas fa-dog"></i>
                             </div>
@@ -91,12 +93,14 @@
                         </button>
                 </div>
             </section>
-            <div class="name-bar">
+            <div class="name-bar"><!--nb de logement dispo-->
                 <div class="cercle">
                     <i class="fas fa-info"></i>
                 </div>
                     <p>Plus de 500 logements sont disponible dans cette ville</p>
             </div>
+            </div>
+            </header>
             <main id="Main"><!--Marseille et Populaires-->
                     <div class="Marseille">
                         <div id="title1">
@@ -338,7 +342,7 @@
                         </div>
                     </div>
             </main>
-            <section id="Activites">
+            <section id="Activites"><!--Activités-->
                 <div class="title3">
                     <h1>Activités à Marseille</h1>
                 </div>
@@ -399,7 +403,7 @@
                         </div>
                     </div>
             </section>
-            <footer>
+            <footer><!--END-->
                 <div id="Propos">
                     <ul>
                         <li><a><b>A propos</b></a></li>
