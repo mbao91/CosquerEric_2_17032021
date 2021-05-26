@@ -405,6 +405,7 @@ button {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 20px;
+    margin-bottom: 23px;
 }
 .card2 {
     display: -webkit-box;
@@ -421,7 +422,7 @@ button {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin: 10px 20px;
+    margin: 0 20px 20px;
 }
 .card2 h3 {
     font-size: inherit;
@@ -962,7 +963,7 @@ ul {
         border-top: 0;
     }
     .before-main h1 {
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .content-box {
         row-gap: 0;
@@ -1020,7 +1021,6 @@ ul {
         height: -moz-fit-content;
         height: fit-content;
         width: 81%;
-        margin-bottom: 5px;
     }
     .card2 h3 {
         font-size: inherit;
@@ -1076,8 +1076,30 @@ ul {
         width: 318px;
     }
 }
-@media screen and (max-width: 380px) and (min-width: 1px) {
-    .Big img, .Medium img, .Small img, .img-left {
+@media screen and (max-width: 370px) and (min-width: 1px) {
+    .Big img, .Medium img, .Small img, .img-left, .img-right {
         width: 287px;
     }
-} 
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+    }
+    .card2 p {
+        margin: 0 ;
+    }
+    .Populaires :nth-child(2n+2) br  {
+        display: none;
+    }
+    .img-right {
+        height: 120px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .stars1 {
+        margin: -30px 0 0 0;
+    }
+
+}
