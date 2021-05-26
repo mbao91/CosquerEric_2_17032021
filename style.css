@@ -36,9 +36,9 @@ header {/* En-tête */
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
@@ -46,44 +46,37 @@ header {/* En-tête */
 .Logo-Reservia {/* Logo en haut à gauche */ 
     height: 50px;
 }
-li > a{
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-}
 nav{/* Nav en haut à droite */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 10px;
+
 }
-#nav-hebergements {/* Nav en haut à droite */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+nav a{
+    text-decoration: none;
+    margin-left: 40px;
+}
+nav > a:hover{
+    border-top: 1px solid var(--blue);
     color: var(--blue);
 }
-#nav-hebergements :hover {
-    border-top: 1px solid var(--blue);
+nav :nth-child(1) {/* Nav en haut à droite */
+    color: var(--black);
+    font-weight: 400;
 }
-#nav-activite {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+nav :nth-child(2) {
+        color: black;
 }
-#nav-activite a {/* Nav en haut à droite*/
-    color: black;
-}
-#nav-inscription {/* Nav en haut à droite*/
+nav :nth-child(3) {/* Nav en haut à droite*/
     font-weight: bold;
-    color: var(--lightblue);
+    color: var(--blue);
     /*position: absolute;
     top: 0;
     right: 0;*/
+}
+nav :nth-child(3):hover {
+    border: none;
 }
 h1 {
     font-size:large;
@@ -161,7 +154,7 @@ input {
     font-weight: bold;
     margin-right: 10px;
 }
-.filter :hover {
+button:hover {
     background: #cccccc;
     color: red;
 }
@@ -251,7 +244,7 @@ button {
     grid-template-rows: auto auto auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-bottom: 25px;
+    padding: 0 15px 25px 30px;
     margin-right: 20px;
 }
 .Marseille > *:nth-child(1) {
@@ -318,12 +311,13 @@ button {
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 5px;
     line-height: 6px;
+    width: 90%;
 }
 .img-left {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 120px;
-    width: 200px;
+    height: 95px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -442,7 +436,7 @@ button {
        object-fit: cover;
     padding: 5px 5px;
     height: 140px;
-    width: 110px;
+    width: 40%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -471,9 +465,8 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin: 20px 0;
-    width: 100%;
 }
 .grid-container > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -576,11 +569,10 @@ button {
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     font-weight: bold;
-    width: 260px;
 }
 .desc3 {
     margin: -5px 0;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .grid-item1 {
     -ms-grid-column: 1;
@@ -592,9 +584,9 @@ button {
 }
 .Big img{
     height: 315px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -608,9 +600,9 @@ button {
 }
 .Medium img{
     height: 155px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -624,9 +616,9 @@ button {
 }
 .Small img{
     height: 90px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -664,6 +656,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+}
+ul {
+    list-style-type: none;
 }
 #Propos, #Hebergements{
     margin-right: 90px;
@@ -918,18 +913,18 @@ footer {
     }
 }
 @media screen and (max-width: 580px) {
-    .content-box {
-        row-gap: 0;
+    .box-content {
+        margin: 0%;
     }
     .Top {
-        display: inline;
+        row-gap: 10px;
     }
-    #nav-inscription {
+    nav :nth-child(3) {
         position: absolute;
-        top: 0;
+        top: 20px;
         right: 10px;
     } 
-    #nav-hebergements, #nav-activite{
+    nav :nth-child(1), nav :nth-child(2){
         width: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -938,19 +933,18 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center;
         border-bottom: 3px solid var(--grey);
-        margin-bottom: 7%;
+        margin-bottom: -10px;
     }
-    #nav-hebergements {
+    nav :nth-child(1) {
         border-bottom-color: var(--blue);
     }
-    #nav-hebergements > ul {
-        padding-inline-start: 0;
+    nav :nth-child(1) > a {
+        -webkit-padding-start: 0;
+                padding-inline-start: 0;
     }
-    #nav-activite > ul {
-        padding-inline-start: 0;
-    }
-    #nav-hebergements :hover {
-        border-top: none;
+    nav :nth-child(2) > a {
+        -webkit-padding-start: 0;
+                padding-inline-start: 0;
     }
     nav {
         width: 100%;
@@ -958,14 +952,26 @@ footer {
         display: -ms-flexbox;
         display: flex;
     }
-}
-@media screen and (max-width: 480px) {
-    .Logo-Reservia, #nav-inscription, .research-bar, .name-bar, .before-main h1, .before-main > p{
+    nav a {
+        margin-left: 0;
+    }
+    nav a:hover{
+        border-top: 0;
+    }
+    .before-main h1 {
+        margin-top: 30px;
+    }
+    .content-box {
+        row-gap: 0;
+    }
+    .Logo-Reservia, nav :nth-child(3), .research-bar, .name-bar, .before-main h1, .before-main > p{
         padding: 0 10px;
     }
     #buttons {
         margin-left: 10px;
     }
+}
+@media screen and (max-width: 480px) {
     .card1 {
         width: -webkit-fit-content;
         width: -moz-fit-content;
