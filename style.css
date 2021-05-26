@@ -1077,6 +1077,9 @@ ul {
     }
 }
 @media screen and (max-width: 370px) and (min-width: 1px) {
+    .Animaux {
+        margin-right: 0;
+    }
     .Big img, .Medium img, .Small img, .img-left, .img-right {
         width: 287px;
     }
@@ -1101,5 +1104,4 @@ ul {
     .stars1 {
         margin: -30px 0 0 0;
     }
-
 }
