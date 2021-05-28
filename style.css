@@ -669,7 +669,10 @@ ul {
 }
 @media screen and (max-width: 1380px) {
     .box-content {
-        margin: 1%;
+        margin: 0%;
+    }
+    .before-main {
+        padding: 0 1%;
     }
     .research-text {
         display: none;
@@ -917,8 +920,8 @@ ul {
     }
 }
 @media screen and (max-width: 580px) {
-    .box-content {
-        margin: 0%;
+    .before-main {
+        padding: 0%;
     }
     .Top {
         row-gap: 10px;
@@ -1030,9 +1033,9 @@ ul {
         font-size: small;
         margin: -15px 0 25px 0;
     }
-    .desc2 {
+    /*.desc2 {
         padding-left: 15px;
-    }
+    }*/
     .card2 :first-child br {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1091,11 +1094,14 @@ ul {
     .card2 p {
         margin: 0 ;
     }
+    .Populaires {
+        width: 100%;
+    }
     .Populaires :nth-child(2n+2) br  {
         display: none;
     }
     .img-right {
-        height: 120px;
+        height: 150px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
