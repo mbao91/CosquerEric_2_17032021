@@ -668,7 +668,7 @@ ul {
 #Propos, #Hebergements{
     margin-right: 90px;
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1425px) {
     .box-content {
         margin: 0%;
     }
