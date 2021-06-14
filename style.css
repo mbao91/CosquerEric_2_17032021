@@ -1,112 +1,119 @@
 body {
-    margin: 0;
+  margin: 0;
 }
-:root { /* Choix des couleurs */
-    --grey: #F2F2F2;
-    --blue:#0065FC;
-    --lightblue:#DEEBFF;
-    --black: black;
-    --white: white;
+:root {
+  /* Choix des couleurs */
+  --grey: #f2f2f2;
+  --blue: #0065fc;
+  --lightblue: #deebff;
+  --black: black;
+  --white: white;
 }
-* {/* Toute la page */
-    font-family: 'Raleway', sans-serif;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+* {
+  /* Toute la page */
+  font-family: "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .box-content {
-    margin: 0 10%;
+  margin: 0 10%;
 }
-header {/* En-tête */
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+header {
+  /* En-tête */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
-.Top {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-                    justify-content: space-between;
+.top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
-.Logo-Reservia {/* Logo en haut à gauche */ 
-    height: 50px;
-    margin-top: 10px;
+.logo-reservia {
+  /* Logo en haut à gauche */
+  height: 50px;
+  margin-top: 10px;
 }
-nav{/* Nav en haut à droite */
-    display: -webkit-box;
-    display: flex;
-    height: 10px;
-
+nav {
+  /* Nav en haut à droite */
+  display: -webkit-box;
+  display: flex;
+  height: 10px;
 }
-nav a{
-    text-decoration: none;
-    margin-left: 40px;
+nav a {
+  text-decoration: none;
+  margin-left: 40px;
 }
-nav a:hover{
-    border-top: 2px solid var(--blue);
-    margin-top: -29px;
-    padding-top: 26px;
-    color: var(--blue);
+nav a:hover {
+  border-top: 2px solid var(--blue);
+  margin-top: -25px;
+  padding-top: 23px;
+  color: var(--blue);
 }
-nav :nth-child(1) {/* Nav en haut à droite */
-    color: var(--black);
-    font-weight: 400;
+nav :nth-child(1) {
+  /* Nav en haut à droite */
+  color: var(--black);
+  font-weight: 400;
 }
 nav :nth-child(2) {
-        color: black;
+  color: black;
 }
-nav :nth-child(3) {/* Nav en haut à droite*/
-    font-weight: bold;
-    color: var(--blue);
+nav :nth-child(3) {
+  /* Nav en haut à droite*/
+  font-weight: bold;
+  color: var(--blue);
 }
 nav :nth-child(3):hover {
-    border: none;
+  border: none;
 }
 h1 {
-    font-size:large;
+  font-size: large;
 }
 .research-bar {
-    margin: 15px 0;
+  margin: 15px 0;
 }
-.left-button {/* Barre de recherche de ville */
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    margin: 5px 0;
+.left-button {
+  /* Barre de recherche de ville */
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  margin: 5px 0;
 }
 .map-logo {
-    background-color: var(--grey);
-    border-radius: 10px 0 0 10px;
-    height: 40px;
-    width: 45px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    margin-right: -2px;
+  background-color: var(--grey);
+  border-radius: 10px 0 0 10px;
+  height: 40px;
+  width: 45px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: -2px;
 }
 input {
-    height: 40px;
-    /*padding-top: -5px;*/
-    padding-left: 10px;
-    font-weight: bold;
-    border-left-style: hidden;
-    border-color: rgba( 135, 135, 135, 0.1);
-    border-width: thin;
+  height: 40px;
+  /*padding-top: -5px;*/
+  padding-left: 10px;
+  font-weight: bold;
+  border-left-style: hidden;
+  border-color: rgba(135, 135, 135, 0.1);
+  border-width: thin;
 }
 /*.research-btn { /*bouton rechercher
     background-color: var(--blue);
@@ -122,6 +129,399 @@ input {
     border: 0px;
 }*/
 .research-btn .rechercher {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 0 10px 10px 0;
+  padding: 0 10px;
+  font-weight: bold;
+  height: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -2px;
+  border: 0px;
+}
+.research-btn .i {
+  display: none;
+  color: var(--white);
+}
+.content-box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-align: flex-end;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+.content-box p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.content-box button:hover {
+  background: #c1c1c1;
+  color: red;
+}
+.content-box button {
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #e7e7e7;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+.content-box button i {
+  height: 40px;
+  width: 40px;
+  background-color: var(--lightblue);
+  border: 1px solid var(--lightblue);
+  color: var(--blue);
+  border-radius: 50%;
+  margin-left: -3px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.name-bar {
+  /*Logo info + texte */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+.name-bar i {
+  /*Logo info*/
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 1px solid grey;
+  color: var(--blue);
+  border-radius: 50%;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+#hebergements {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hebergements_marseille {
+  background-color: var(--grey);
+  border-radius: 20px;
+  width: 70%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+  padding: 0 15px 25px 30px;
+  margin-right: 20px;
+}
+#marseille_title1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 28px;
+}
+h2 {
+  margin: 0;
+}
+.marseille_card1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  padding: 5px;
+  margin-top: 25px;
+  line-height: 6px;
+  width: 90%;
+}
+.img-left {
+  object-fit: cover;
+  height: 95px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.desc1 {
+  padding: 0 6px;
+}
+.marseille_card1 h3 {
+  font-size: inherit;
+}
+.marseille_card1 p {
+  font-size: small;
+}
+.stars {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.stars1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.starB {
+  color: var(--blue);
+}
+.starG {
+  color: var(--grey);
+}
+.hebergements_marseille a {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+}
+.hebergements_populaires {
+  background-color: var(--grey);
+  width: 30%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+}
+.populaires_header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+.icon-graph {
+  font-weight: 900;
+}
+.populaires_card2 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  background-color: var(--white);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 20px 20px;
+}
+.populaires_card2 h3 {
+  font-size: inherit;
+  font-weight: 900;
+}
+.populaires_card2 p {
+  font-size: small;
+  margin: -15px 0 25px 0;
+}
+.desc2 {
+  padding-left: 10px;
+}
+.img-right {
+  object-fit: cover;
+  padding: 5px 5px;
+  height: 140px;
+  width: 40%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#activites {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.activites_grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  grid-gap: 30px;
+  margin: 20px 0;
+}
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6 {
+  -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+  border-radius: 20px;
+  font-weight: bold;
+}
+.activites_grid-container img {
+  width: 265px;
+}
+.desc3 {
+  margin: -5px 0;
+  padding-left: 15px;
+}
+
+.grid-item1 {
+  grid-column: 1;
+  grid-row: 1 / 7;
+  height: 380px;
+  /*Vieux port*/
+}
+.grid-item1 img,
+.grid-item4 img {
+  height: 330px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.grid-item2 {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  /*Pomègues*/
+}
+.grid-item2 img {
+  height: 165px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.grid-item3 {
+  grid-column: 2;
+  grid-row: 4 / 7;
+  height: 140px;
+  /*Ile de Frioul*/
+}
+.grid-item3 img {
+  height: 90px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.grid-item4 {
+  grid-column: 3;
+  grid-row: 1 / 7;
+  height: 380px;
+  /*Calanques*/
+}
+.grid-item5 {
+  grid-column: 4;
+  grid-row: 1 / 3;
+  height: 175px;
+  /*Notre Dame*/
+}
+.grid-item5 img {
+  height: 125px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.grid-item6 {
+  grid-column: 4;
+  grid-row: 3 / 7;
+  height: 175px;
+  /*Longchamps*/
+}
+.grid-item6 img {
+  height: 125px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+footer {
+  background-color: var(--grey);
+  width: 100%;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+.end {
+  margin: 0 10%;
+  display: inline-flex;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.end li {
+  margin-bottom: 10px;
+}
+#end_propos {
+  margin-right: 160px;
+}
+#end_hebergements {
+  margin-right: 255px;
+}
+@media screen and (max-width: 1420px) {
+  .box-content {
+    margin: 0%;
+  }
+  .before-main {
+    padding: 0 1%;
+  }
+  .research {
+    padding: 20px;
+  }
+  .research-btn button {
+    border-radius: 10px;
+    margin-left: -15px;
+  }
+  .research-btn p {
+    display: none;
+  }
+  .research-btn .rechercher {
+    display: none;
+  }
+  .research-btn .i {
+    display: flex;
+    align-items: center;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 0 10px 10px 0;
@@ -133,785 +533,501 @@ input {
     width: fit-content;
     margin-left: -2px;
     border: 0px;
-}
-.research-btn .i {
-    display: none;
-    color: var(--white);
-}
-.content-box {
+  }
+  .research-logo {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row wrap;
-    -webkit-box-align: flex-end;
-            align-items: flex-end;
-    padding-top: 5px;
-}
-.content-box p {
-    font-weight: bold;
-    margin-right: 10px;
-}
-.content-box button:hover {
-    background: #c1c1c1;
-    color: red;
-}
-.content-box button {
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid #e7e7e7;
-    height: 40px;
-    margin-left: 20px;
+  }
+  .content-box p {
+    margin-right: 0;
+  }
+  #hebergements {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-flow: column-reverse wrap;
+  }
+  .hebergements_marseille {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-bottom: 10px;
-    padding: 0 10px 0 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: var(--white);
     display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    font-weight: bold;
-}
-.content-box button i { 
-    height: 40px; 
-    width: 40px; 
-    background-color: var(--lightblue);
-    border: 1px solid var(--lightblue);
-    color: var(--blue);
-    border-radius: 50%;
-    margin-left: -3px;
-    margin-right: 10px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-}
-.name-bar { /*Logo info + texte */
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    font-size: 0.9em;
-    padding-bottom: 10px;
-}
-.name-bar i { /*Logo info*/
-    height: 25px; 
-    width: 25px; 
-    background-color: white;
-    border: 1px solid grey;
-    color: var(--blue);
-    border-radius: 50%;
-    margin-right: 5px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-}
-#Main {
-    display: -webkit-inline-box;
-    display: inline-flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-flow: row nowrap;
+    flex-flow: row wrap;
+  }
+  #marseille_title1 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding: 10px 20px 0 15px;
     width: 100%;
+  }
+  .marseille_card1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
     margin-bottom: 20px;
-}
-.Marseille {
-    background-color: var(--grey);
-    border-radius: 20px;
-    width: 70%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: auto auto auto;
-        justify-content: space-around;
-    padding: 0 15px 25px 30px;
-    margin-right: 20px;
-}
-#title1 {
-    grid-column: 1 / span 3;
-    grid-row: 1;
+  }
+  .img-left {
+    object-fit: cover;
+    height: 150px;
+    width: 420px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .hebergements_marseille a {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .hebergements_populaires {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
-    padding-top: 28px;
-}
-h2 {
-    margin: 0;
-}
-.card1 {
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 0;
+  }
+  .populaires_header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .populaires_card2 {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
-    background-color: var(--white);
+    flex-flow: column wrap;
     border-radius: 20px;
     -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-            box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    background-color: var(--white);
+    margin: 0 20px 20px 20px;
     padding: 5px;
-    line-height: 6px;
-    width: 90%;
-}
-.img-left {
-    object-fit: cover;
-    height: 95px;
-    width: 100%;
+  }
+  .populaires_card2 :first-child br {
+    display: none;
+  }
+  .populaires_card2 h3 {
+    margin-bottom: auto;
+  }
+  .populaires_card2 p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .img-right {
+    height: 150px;
+    width: 420px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-.desc1 {
-    padding: 0 6px;
-}
-.card1 h3 {
-    font-size: inherit;
-}
-.card1 p {
-    font-size: small;
-}
-.stars {
+    border-bottom-left-radius: 0;
+    padding: 0;
+  }
+  .desc2 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .desc1,
+  .desc2,
+  .desc3 {
+    padding-left: 15px;
+  }
+  .activites_title3 {
+    padding: 0 15px;
+  }
+  .activites_grid-container {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
-    padding-bottom: 5px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .grid-item1 img,
+  .grid-item2 img,
+  .grid-item3 img,
+  .grid-item4 img,
+  .grid-item5 img,
+  .grid-item6 img {
+    object-fit: cover;
+    height: 150px;
+    width: 420px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .grid-item1,
+  .grid-item2,
+  .grid-item3,
+  .grid-item4,
+  .grid-item5,
+  .grid-item6 {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    padding: 5px;
+  }
 }
-.stars1 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-}
-.starB {
-    color:var(--blue);
-}
-.starG {
-    color:var(--grey);
-}
-.Marseille a{
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-}
-.Populaires {
-    background-color: var(--grey);
-    width: 30%;
-    border-radius: 20px;
+@media screen and (max-width: 850px) {
+  .research {
+    padding: 10px;
+  }
+  .content-box {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+    padding-left: 4px;
+  }
+  .content-box button,
+  .content-box p {
+    margin-left: -1px;
+  }
+  .name-bar {
+    padding-left: 2px;
+  }
+  .content-box p {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .romantique {
+    grid-column: 1;
+    grid-row: 3 / 4;
+  }
+  .animaux {
+    grid-column: 1;
+    grid-row: 4 / 5;
+  }
+  .content-box button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .end {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+  #end_propos,
+  #end_hebergements {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  /*Partie haute jusqu'à hébergement*/
+  .logo-reservia {
+    /* Logo en haut à gauche*/
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .before-main {
+    padding: 0;
+  }
+  .top {
     row-gap: 10px;
+  }
+  nav :nth-child(3) {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  nav :nth-child(1),
+  nav :nth-child(2) {
+    width: 50%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--grey);
+    margin-bottom: -25px;
+  }
+  nav :nth-child(1) {
+    border-bottom-color: var(--blue);
+  }
+  nav :nth-child(1) > a {
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+  }
+  nav :nth-child(2) > a {
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+  }
+  nav {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+  }
+  nav a {
+    margin-left: 0;
+  }
+  nav a:hover {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .research {
+    padding: 5px;
+  }
+  .research h1 {
+    margin-top: 40px;
+  }
+  .research #buttons p {
+    padding-left: 5px;
+  }
+  .content-box {
+    row-gap: 0;
+  }
+  .logo-reservia,
+  nav :nth-child(3),
+  .research-bar,
+  .name-bar,
+  .research h1,
+  .research > p {
+    padding: 0 20px;
+  }
+  #buttons {
+    margin-left: 15px;
+  }
+  #marseille_title1,
+  .populaires_header {
+    padding: 20px 30px;
+  }
+  .marseille_card1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .populaires_card2 p {
+    margin-bottom: auto;
+    margin-top: 5px;
+  }
+  .stars {
+    padding-top: 0;
+  }
+  .stars1 {
+    padding-top: 5px;
+  }
 }
-.Populaires-header {
+@media screen and (max-width: 480px) {
+  #marseille_title1 {
+    padding: 20px 0 0 25px;
+  }
+  .marseille_card1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .hebergements_marseille a {
+    padding: 0 25px;
+  }
+  .populaires {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .populaires_header {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     -webkit-box-align: center;
-            align-items: center;
-    padding: 28px 20px;
-}
-.card2 {
+    align-items: center;
+    padding: 20px 25px;
+  }
+  .populaires_card2 {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
+    flex-direction: row;
     border-radius: 20px;
     -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-            box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
+    box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
     background-color: var(--white);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin: 0 20px 20px;
-}
-.card2 h3 {
+  }
+  .populaires_card2 h3 {
     font-size: inherit;
     font-weight: 900;
-}
-.card2 p {
+    margin-bottom: 9px;
+  }
+  .populaires_card2 p {
     font-size: small;
-    margin: -15px 0 25px 0;
-}
-.desc2 {
-    padding-left: 10px;
-}
-.img-right {
-    object-fit: cover;
-    padding: 5px 5px;
-    height: 140px;
-    width: 40%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-#Activites {
+    margin: 0 0 25px 0;
+  }
+  .desc2 {
+    padding-left: 15px;
+  }
+  .populaires_card2 :first-child br {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        flex-direction: column;
-        flex-wrap: wrap;
-    margin: 20px 0;
-}
-.title3 {
-    font-weight: 900;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    grid-gap: 30px;
-    margin: 20px 0;
-}
-.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6{
-    -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-            box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-    border-radius: 20px;
-    font-weight: bold;
-}
-.grid-container img {
-    width: 265px;
-}
-.desc3 {
-    margin: -5px 0;
-    padding-left: 15px;
-}
-
-.grid-item1 {
-    grid-column: 1;
-    grid-row: 1 / 7;
-    height: 380px;
-    /*Vieux port*/
-}
-.grid-item1 img, .grid-item4 img{
-    height: 330px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-       object-fit: cover;
-}
-.grid-item2 {
-    grid-column: 2;
-    grid-row: 1 / 4;
-    /*Pomègues*/
-}
-.grid-item2 img {
-    height: 165px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-       object-fit: cover;
-}
-.grid-item3 {
-    grid-column: 2;
-    grid-row: 4 / 7;
-    height: 140px;
-    /*Ile de Frioul*/
-}
-.grid-item3 img {
-    height: 90px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-       object-fit: cover;
-}
-.grid-item4 {
-    grid-column: 3;
-    grid-row: 1 / 7;
-    height: 380px;
-    /*Calanques*/
-}
-.grid-item5 {
-    grid-column: 4;
-    grid-row: 1 / 3;
-    height: 175px;
-    /*Notre Dame*/
-}
-.grid-item5 img {
-    height: 125px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-       object-fit: cover;
-}
-.grid-item6 {
-    grid-column: 4;
-    grid-row: 3 / 7;
-    height: 175px;
-    /*Longchamps*/
-}
-.grid-item6 img {
-    height: 125px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-       object-fit: cover;
-}
-footer {
-    background-color: var(--grey);
+  }
+  .img-right {
+    object-fit: cover;
+    padding: 1px 1px;
+    height: 150px;
+    width: 40%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+  .stars1 {
+    padding-top: 20px;
+  }
+  .grid-item1 img,
+  .grid-item2 img,
+  .grid-item3 img,
+  .grid-item4 img,
+  .grid-item5 img,
+  .grid-item6 img {
+    width: 420px;
+  }
+  .activites_title3 {
+    padding: 0 25px;
+  }
+  .activites_grid-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer {
     width: 100%;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-}
-.end {
-    margin: 0 10%;
-    display: inline-flex;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-.end li{
-    margin-bottom: 10px;
-}
-#Propos {
-    margin-right: 140px;
-}
-#Hebergements {
-    margin-right: 270px;
-}
-@media screen and (max-width: 1420px) {
-    .box-content {
-        margin: 0%;
-    }
-    .before-main {
-        padding: 0 1%;
-    }
-    .research-btn button{
-        border-radius: 10px;
-        margin-left: -15px;
-    }
-    .research-btn p {
-        display: none;
-    }
-    .research-btn .rechercher {
-        display: none;
-    }
-    .research-btn .i {
-        display: flex;
-        align-items: center;
-        background-color: var(--blue);
-        color: var(--white);
-        border-radius: 0 10px 10px 0;
-        padding: 0 10px;
-        font-weight: bold;
-        height: 40px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin-left: -2px;
-        border: 0px;
-    }
-    .research-logo {
-        display: -webkit-box;
-        display: flex;
-    }
-    #Main{
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-                flex-flow: column-reverse wrap; 
-    }
-    .Marseille {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin-bottom: 10px;
-        margin-right: 0;
-        padding: 0;
-        background-color: var(--white);
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-flow: row wrap;
-    }
-    #title1 {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
-        padding: 10px 20px 0 20px;
-        width: 100%;
-    }
-    .card1 {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-                box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-        margin-bottom: 20px;
-    }
-    .img-left {
-           object-fit: cover;
-        height: 150px;
-        width: 420px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .Marseille a {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .Populaires {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-flow: row wrap;
-        -webkit-box-pack: center;
-                justify-content: center;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        padding-bottom: 10px;
-        margin: 0 0 20px 0;
-        border-radius: 0;
-    }
-    .Populaires-header {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
-        padding-top: 20px;
-        width: 100%;
-    }
-    .card2 {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-flow: column wrap;
-        border-radius: 20px;
-        -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-                box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-        background-color: var(--white);
-        margin: 0 20px 20px 20px;
-        padding: 5px;
-    }
-    .card2 :first-child br  {
-        display: none;
-    }
-    .card2 p {
-        margin: 0;
-    }
-    .img-right {
-        height: 150px;
-        width: 420px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        padding: 0;
-    }
-    .desc2 {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-        line-height: 25px;
-        padding: 0 6px;
-    }
-    .title3 {
-        padding: 0 20px;
-    }
-    .grid-container {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-flow: row wrap;
-            justify-content: space-around;
-    }
-    .grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img {
-           object-fit: cover;
-        height: 150px;
-        width: 420px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6{
-        width: auto;
-        height: auto;
-        margin-bottom: 20px;
-        -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-                box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-        padding: 5px;
-    }
-}
-@media screen and (max-width: 850px) {
-    .content-box {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto;
-        row-gap: 20px;
-        padding-left: 4px;
-    }
-    .content-box p {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }
-    .Romantique {
-        grid-column: 1;
-        grid-row: 3 / 4;
-    }
-    .Animaux {
-        grid-column: 1;
-        grid-row: 4 / 5;
-    }
-    .content-box button {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-    .end {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 580px) {
-    .Logo-Reservia {/* Logo en haut à gauche*/ 
-        height: 50px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    .before-main {
-        padding: 0%;
-    }
-    .Top {
-        row-gap: 10px;
-    }
-    nav :nth-child(3) {
-        position: absolute;
-        top: 20px;
-        right: 10px;
-    } 
-    nav :nth-child(1), nav :nth-child(2){
-        width: 50%;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        border-bottom: 3px solid var(--grey);
-        margin-bottom: -30px;
-    }
-    nav :nth-child(1) {
-        border-bottom-color: var(--blue);
-    }
-    nav :nth-child(1) > a {
-        -webkit-padding-start: 0;
-                padding-inline-start: 0;
-    }
-    nav :nth-child(2) > a {
-        -webkit-padding-start: 0;
-                padding-inline-start: 0;
-    }
-    nav {
-        width: 100%;
-        display: -webkit-box;
-        display: flex;
-    }
-    nav a {
-        margin-left: 0;
-    }
-    nav a:hover{
-        border-top: 0;
-    }
-    .before-main h1 {
-        margin-top: 50px;
-    }
-    .content-box {
-        row-gap: 0;
-    }
-    .Logo-Reservia, nav :nth-child(3), .research-bar, .name-bar, .before-main h1, .before-main > p {
-        padding: 0 25px;
-    }
-    #buttons p {
-        margin-left: 20px;
-    }
-    #buttons {
-        margin-left: 10px;
-    }
-}
-@media screen and (max-width: 480px) {
-    #title1 {
-        padding: 20px 40px 0 40px;
-    }
-    .card1 {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-    .Marseille a {
-        padding: 0 40px;
-    }
-    .Populaires {
-        width: 100%;
-        display: -webkit-box;
-        display: flex;
-        margin-bottom: 0;
-
-    }
-    .Populaires-header {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-                align-items: center;
-        padding: 20px 40px;
-    }
-    .card2 {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
-        border-radius: 20px;
-        -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-                box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
-        background-color: var(--white);
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-    }
-    .card2 h3 {
-        font-size: inherit;
-        font-weight: 900;
-        margin-bottom: 9px;
-    }
-    .card2 p {
-        font-size: small;
-        margin: 0 0 25px 0;
-    }
-    /*.desc2 {
-        padding-left: 15px;
-    }*/
-    .card2 :first-child br {
-        display: -webkit-box;
-        display: flex;
-    }
-    .img-right {
-           object-fit: cover;
-        padding: 1px 1px;
-        height: 180px;
-        width: 40%;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-    }
-    .stars1 {
-        padding-top: 30px;
-    }
-    .grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img, .card2 {
-        width: 420px;
-    }
-    .grid-container {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-    footer {
-        width: 100%;
-    }
-    .end {
-        margin: 0 7%;
-    }
-    #Hebergements {
-        margin-right: 0;
-    }
+  }
+  .end {
+    margin: 0 7%;
+  }
+  #end_hebergements {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 420px) {
-    .left-button, input, form {
-        width: 100%;
-    }
-    .map-logo {
-        width: 60px;
-    }
-    .research-btn button {
-        width: 45px;
-    }
-    .research-btn button i {
-        display: flex;
-        justify-content: center;
-    }
-    .cercle {
-        margin-right: 0;
-    }
-    .name-bar p {
-        padding: 4px;
-    }
-    .content-box :nth-child(5) + p {
-        padding: 0;
-    }
-    #title1 {
-        padding: 30px 20px 10px;
-    }
-    .Marseille a {
-        padding-left: 20px;
-    }
-    .Populaires-header {
-        padding: 20px;
-    }
-    .grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img, .img-left {
-        width: 364px;
-    }
-    .end {
-        margin: 0 10px;
-        padding-left: 20px;
-    }
+  .left-button,
+  input,
+  form {
+    width: 100%;
+  }
+  .map-logo {
+    width: 60px;
+  }
+  .research-btn button {
+    width: 45px;
+  }
+  .research-btn button i {
+    display: flex;
+    justify-content: center;
+  }
+  .cercle {
+    margin-right: 0;
+  }
+  .name-bar p {
+    padding: 4px;
+  }
+  .content-box :nth-child(5) + p {
+    padding: 0;
+  }
+  #marseille_title1 {
+    padding: 30px 20px 10px;
+  }
+  .hebergements_marseille a {
+    padding-left: 20px;
+  }
+  .activites_title3 {
+    padding: 20px;
+  }
+  .grid-item1 img,
+  .grid-item2 img,
+  .grid-item3 img,
+  .grid-item4 img,
+  .grid-item5 img,
+  .grid-item6 img,
+  .img-left {
+    width: 364px;
+    height: 125px;
+  }
+  .end {
+    margin: 0 10px;
+    padding-left: 20px;
+  }
 }
-@media screen and (max-width: 375px) /*and (min-width: 1px)*/ {
-    .Logo-Reservia, nav :nth-child(3), .research-bar, .name-bar, .before-main h1, .before-main > p {
-        padding: 0 20px;
-    }
-    #button {
-        margin-left: 0;
-    }
-    .content-box {
-        padding-left: 0;
-    }
-    #title1 {
-        padding-left: 20px;
-    }
-    .Marseille a {
-        padding-left: 20px;
-    }
-    .Populaires-header {
-        padding: 20px 22px;
-    }
-    .card2 {
-        width: 90%;
-    }
-    .title3 {
-        margin-left: 0;
-    }
-    .grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img, .img-left {
-        width: 325px;
-    }
-    .end {
-        margin-left: 10px;
-    }
-    #Propos {
-        margin-right: 0;
-
-    }
+@media screen and (max-width: 375px) /*and (min-width: 1px) */ {
+  .logo-reservia,
+  nav :nth-child(3),
+  .research-bar,
+  .name-bar,
+  .before-main h1,
+  .before-main > p {
+    padding: 0 20px;
+  }
+  #button {
+    margin-left: 0;
+  }
+  .content-box {
+    padding-left: 0;
+  }
+  #marseille_title1 {
+    padding-left: 20px;
+  }
+  .hebergements_marseille a {
+    padding-left: 20px;
+  }
+  .populaires_header {
+    padding: 20px 22px;
+  }
+  .populaires_card2 {
+    width: 90%;
+  }
+  .title3 {
+    margin-left: 0;
+  }
+  .grid-item1 img,
+  .grid-item2 img,
+  .grid-item3 img,
+  .grid-item4 img,
+  .grid-item5 img,
+  .grid-item6 img,
+  .img-left {
+    width: 325px;
+  }
+  .end {
+    margin-left: 10px;
+  }
+  #end_propos {
+    margin-right: 0;
+  }
 }
