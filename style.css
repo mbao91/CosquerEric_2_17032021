@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
 }
@@ -21,22 +28,29 @@ body {
 header {
   /* En-tête */
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .top {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .logo-reservia {
@@ -47,6 +61,7 @@ header {
 nav {
   /* Nav en haut à droite */
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 10px;
 }
@@ -85,11 +100,14 @@ h1 {
 .left-button {
   /* Barre de recherche de ville */
   display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin: 5px 0;
 }
@@ -99,10 +117,13 @@ h1 {
   height: 40px;
   width: 45px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-right: -2px;
 }
@@ -147,11 +168,14 @@ input {
 }
 .content-box {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   -webkit-box-align: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
   padding-top: 5px;
 }
@@ -172,8 +196,10 @@ input {
   margin-bottom: 10px;
   padding: 0 10px 0 0;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-weight: bold;
 }
@@ -187,17 +213,22 @@ input {
   margin-left: -3px;
   margin-right: 10px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .name-bar {
   /*Logo info + texte */
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 0.9em;
   padding-bottom: 10px;
@@ -212,17 +243,22 @@ input {
   border-radius: 50%;
   margin-right: 5px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 #hebergements {
   display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   width: 100%;
   margin-bottom: 20px;
@@ -231,21 +267,66 @@ input {
   background-color: var(--grey);
   border-radius: 20px;
   width: 70%;
+  display: -ms-grid;
   display: grid;
   grid-gap: 20px;
+  -ms-grid-columns: 30% 20px 30% 20px 30%;
   grid-template-columns: 30% 30% 30%;
+  -ms-grid-rows: auto 20px auto 20px auto;
   grid-template-rows: auto auto auto;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 0 15px 25px 30px;
   margin-right: 20px;
 }
+.hebergements_marseille > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.hebergements_marseille > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.hebergements_marseille > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.hebergements_marseille > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.hebergements_marseille > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.hebergements_marseille > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.hebergements_marseille > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.hebergements_marseille > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.hebergements_marseille > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
 #marseille_title1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
+  -ms-grid-row: 1;
   grid-row: 1;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding-top: 28px;
 }
@@ -254,9 +335,11 @@ h2 {
 }
 .marseille_card1 {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: var(--white);
   border-radius: 20px;
@@ -268,6 +351,7 @@ h2 {
   width: 90%;
 }
 .img-left {
+  -o-object-fit: cover;
   object-fit: cover;
   height: 95px;
   width: 100%;
@@ -285,18 +369,22 @@ h2 {
 }
 .stars {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding-top: 15px;
   padding-bottom: 5px;
 }
 .stars1 {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding-top: 15px;
   padding-bottom: 5px;
@@ -316,20 +404,39 @@ h2 {
   background-color: var(--grey);
   width: 30%;
   border-radius: 20px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto;
   grid-template-columns: auto;
+  -ms-grid-rows: auto 10px auto 10px auto;
   grid-template-rows: auto auto auto;
   row-gap: 10px;
 }
+.hebergements_populaires > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.hebergements_populaires > *:nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.hebergements_populaires > *:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
 .populaires_header {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 30px 20px;
 }
@@ -338,9 +445,11 @@ h2 {
 }
 .populaires_card2 {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
@@ -363,6 +472,7 @@ h2 {
   padding-left: 10px;
 }
 .img-right {
+  -o-object-fit: cover;
   object-fit: cover;
   padding: 5px 5px;
   height: 140px;
@@ -372,21 +482,124 @@ h2 {
 }
 #activites {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 20px 0;
 }
 .activites_grid-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 30px auto 30px auto 30px auto;
   grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto 30px auto 30px auto 30px auto 30px auto 30px auto;
   grid-template-rows: auto auto auto auto auto auto;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   grid-gap: 30px;
   margin: 20px 0;
+}
+.activites_grid-container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.activites_grid-container > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.activites_grid-container > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+.activites_grid-container > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+.activites_grid-container > *:nth-child(17) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(18) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(19) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(20) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 7;
+}
+.activites_grid-container > *:nth-child(21) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+}
+.activites_grid-container > *:nth-child(22) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+}
+.activites_grid-container > *:nth-child(23) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 5;
+}
+.activites_grid-container > *:nth-child(24) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 7;
 }
 .grid-item1,
 .grid-item2,
@@ -408,7 +621,10 @@ h2 {
 }
 
 .grid-item1 {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
   grid-row: 1 / 7;
   height: 380px;
   /*Vieux port*/
@@ -418,10 +634,14 @@ h2 {
   height: 330px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .grid-item2 {
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   grid-row: 1 / 4;
   /*Pomègues*/
 }
@@ -429,10 +649,14 @@ h2 {
   height: 165px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .grid-item3 {
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
   grid-row: 4 / 7;
   height: 140px;
   /*Ile de Frioul*/
@@ -441,16 +665,23 @@ h2 {
   height: 90px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .grid-item4 {
+  -ms-grid-column: 3;
   grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
   grid-row: 1 / 7;
   height: 380px;
   /*Calanques*/
 }
 .grid-item5 {
+  -ms-grid-column: 4;
   grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   height: 175px;
   /*Notre Dame*/
@@ -459,10 +690,14 @@ h2 {
   height: 125px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .grid-item6 {
+  -ms-grid-column: 4;
   grid-column: 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
   grid-row: 3 / 7;
   height: 175px;
   /*Longchamps*/
@@ -471,19 +706,24 @@ h2 {
   height: 125px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 footer {
   background-color: var(--grey);
   width: 100%;
   display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .end {
   margin: 0 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 ul {
@@ -520,7 +760,11 @@ ul {
     display: none;
   }
   .research-btn .i {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: var(--blue);
     color: var(--white);
@@ -536,6 +780,7 @@ ul {
   }
   .research-logo {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .content-box p {
@@ -543,9 +788,11 @@ ul {
   }
   #hebergements {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse wrap;
     flex-flow: column-reverse wrap;
   }
   .hebergements_marseille {
@@ -557,16 +804,20 @@ ul {
     padding: 0;
     background-color: var(--white);
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   #marseille_title1 {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding: 10px 20px 0 15px;
     width: 100%;
@@ -580,6 +831,7 @@ ul {
     margin-bottom: 20px;
   }
   .img-left {
+    -o-object-fit: cover;
     object-fit: cover;
     height: 150px;
     width: 420px;
@@ -592,11 +844,14 @@ ul {
   }
   .hebergements_populaires {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -607,18 +862,22 @@ ul {
   }
   .populaires_header {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding-top: 20px;
     width: 100%;
   }
   .populaires_card2 {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     border-radius: 20px;
     -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
@@ -647,9 +906,11 @@ ul {
   }
   .desc2 {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
@@ -664,10 +925,13 @@ ul {
   }
   .activites_grid-container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   .grid-item1 img,
@@ -676,6 +940,7 @@ ul {
   .grid-item4 img,
   .grid-item5 img,
   .grid-item6 img {
+    -o-object-fit: cover;
     object-fit: cover;
     height: 150px;
     width: 420px;
@@ -701,11 +966,46 @@ ul {
     padding: 10px;
   }
   .content-box {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
+    -ms-grid-rows: auto 20px auto 20px auto 20px auto;
     grid-template-rows: auto auto auto auto;
     row-gap: 20px;
     padding-left: 4px;
+  }
+  .content-box > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .content-box > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .content-box > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .content-box > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .content-box > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .content-box > *:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+  .content-box > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .content-box > *:nth-child(8) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
   }
   .content-box button,
   .content-box p {
@@ -715,15 +1015,24 @@ ul {
     padding-left: 2px;
   }
   .content-box p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+    -ms-grid-row: 1;
     grid-row: 1;
   }
   .romantique {
+    -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3 / 4;
   }
   .animaux {
+    -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
     grid-row: 4 / 5;
   }
   .content-box button {
@@ -733,9 +1042,11 @@ ul {
   }
   .end {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   #end_propos,
@@ -766,8 +1077,10 @@ ul {
   nav :nth-child(2) {
     width: 50%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-bottom: 3px solid var(--grey);
     margin-bottom: -25px;
@@ -786,6 +1099,7 @@ ul {
   nav {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   nav a {
@@ -854,26 +1168,33 @@ ul {
   .populaires {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 0;
   }
   .populaires_header {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 20px 25px;
   }
   .populaires_card2 {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     border-radius: 20px;
     -webkit-box-shadow: 0 3px 9px 3px rgba(164, 159, 159, 0.2);
@@ -882,6 +1203,7 @@ ul {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: -moz-available;
   }
   .populaires_card2 h3 {
     font-size: inherit;
@@ -897,9 +1219,11 @@ ul {
   }
   .populaires_card2 :first-child br {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .img-right {
+    -o-object-fit: cover;
     object-fit: cover;
     padding: 1px 1px;
     height: 150px;
@@ -949,7 +1273,11 @@ ul {
     width: 45px;
   }
   .research-btn button i {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .cercle {
